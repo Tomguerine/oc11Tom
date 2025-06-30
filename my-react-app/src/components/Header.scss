@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    height: 40px;
+  }
+
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: black;
+    position: relative;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: black;
+      text-underline-offset: 4px; // facultatif pour un effet visuel plus net
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

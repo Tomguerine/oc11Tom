@@ -1,0 +1,13 @@
+.home {
+  max-width: 800px;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+}
