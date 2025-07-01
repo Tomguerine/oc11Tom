@@ -1,17 +1,17 @@
-import { useParams, Navigate } from 'react-router-dom'
-import data from '../data/data.json'
-import Slideshow from '../components/Slideshow'
-import Collapse from '../components/Collapse'
-import HostInfo from '../components/HostInfo'
-import RatingStars from '../components/RatingStars'
-import TagList from '../components/TagList'
-import './Property.scss'
+import Slideshow from "../components/Slideshow";
+import Collapse from "../components/Collapse";
+import HostInfo from "../components/HostInfo";
+import RatingStars from "../components/RatingStars";
+import TagList from "../components/TagList";
+import { useParams, Navigate } from "react-router-dom";
+import data from "../data/data.json";
+import "./Property.scss";
 
 export default function Property() {
-  const { id } = useParams()
-  const item = data.find((d) => d.id === id)
+  const { id } = useParams();
+  const item = data.find((d) => d.id === id);
   if (!item) {
-    return <Navigate to="/404" />
+    return <Navigate to="/404" />;
   }
   return (
     <div className="property">
@@ -38,5 +38,5 @@ export default function Property() {
         </Collapse>
       </div>
     </div>
-  )
+  );
 }
